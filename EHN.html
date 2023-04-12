@@ -27,8 +27,8 @@
         <ul>
             <li class="item"><a>Home</a></li>
             <li class="item"><a>Blog</a></li>
-            <li class="item"><a>About us</a></li>
-            <li class="item"><a>Contact Us</a></li>
+            <li class="item"><a href="#aboutUs">About us</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
         </ul>
     </nav>
 
@@ -43,7 +43,7 @@
         </div>
         <div class="button-container">
             <button class="btn">Blog Articles</button>
-            <button class="btn">Contact Us</button>
+            <a href="#contact"><button class="btn">Contact Us</button></a>
         </div>
     </section>
 
@@ -57,7 +57,7 @@
 <!-- ABOUT US.......................................................................  -->
 
 
-    <section class="about-us">
+    <section class="about-us" id="aboutUs">
         <h1 class="h-primary center">About Us</h1>
         <div class="about us para">
             <p>
@@ -67,7 +67,6 @@
                 recent economic trends and policies.
             </p>
             <div class="button-container2">
-
                 <button class="btn2">Learn More</button>
             </div>
         </div>
@@ -77,43 +76,40 @@
     <!-- CONTACT FORM.....................................................  -->
 
 
-    <section>
-        <div class="container">
-            <section id="contact">
-                <h1 class="h-primary center">Contact Us</h1>
-                <div id="contact-box">
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
 
-                    <form action="">
-                        <div class="form-group">
-                            <label for="name">Name:</label>
-                            <input type="text" name="Name" id="Name" placeholder="Enter Your Name">
-                        </div>
-                        <div class="form-group">
-                            <label for="name">Email:</label>
-                            <input type="text" name="Name" id="Name" placeholder="Enter Your Email Address">
-                        </div>
-                        <div class="form-group">
-                            <label for="name">Phone Number:</label>
-                            <input type="text" name="Name" id="Name" placeholder="Enter Your Phone Number">
-                        </div>
-                        <div class="form-group">
-                            <label for="name">Message:</label>
-                            <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                        </div>
-                    </form>
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" name="Name" id="Name" placeholder="Enter Your Name">
                 </div>
-            </section>
+                <div class="form-group">
+                    <label for="name">Email:</label>
+                    <input type="text" name="Email" id="Email" placeholder="Enter Your Email Address">
+                </div>
+                <div class="form-group">
+                    <label for="name">Phone Number:</label>
+                    <input type="text" name="phoneNumber" id="phoneNumber" placeholder="Enter Your Phone Number">
+                </div>
+                <div class="form-group-message">
+                    <label for="name">Message:</label><br>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+            </form>
         </div>
+    </section>
 
 
-        <!-- Footer...................................................... -->
+    <!-- Footer...................................................... -->
 
 
-        <footer>
-            <div class="center">
-                copyright &copy; www.ehn.com. All rights Reserved.
-            </div>
-        </footer>
+    <footer>
+        <div class="center">
+            copyright &copy; www.ehn.com. All rights Reserved.
+        </div>
+    </footer>
 
 
 
