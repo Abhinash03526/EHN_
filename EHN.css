@@ -1,0 +1,269 @@
+/* CSS RESET */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+/* Side Scroll Bar  */
+::-webkit-scrollbar {
+    width: 10px;
+    /* width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #888;
+    /* color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #253e6e;
+    /* color of the scrollbar thumb */
+    border-radius: 5px;
+    /* rounded corners of the scrollbar thumb */
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+
+}
+
+/* logo and Image */
+
+#logo {
+    margin: 10px 25px;
+
+}
+
+#logo img {
+    margin-left: 30px;
+    height: 70px;
+    cursor: pointer;
+    transition: transform 0.4s ease-in-out;
+
+}
+
+#logo img:hover {
+    transform: scale(1.05);
+}
+
+/* List Styling ...............................................................*/
+#navbar {
+    position: relative;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar::before {
+    content: "";
+    background-color: #004aad;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 6px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: azure;
+    transition: transform 0.1s ease-in-out;
+
+}
+
+#navbar ul li a:hover {
+    color: #ffffff;
+    /* background-color: aliceblue; */
+    cursor: pointer;
+    transform: scale(1.15);
+    opacity: 100%;
+
+}
+
+/* Home Section */
+#Home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 475px;
+}
+
+#Home::before {
+    content: "";
+    position: absolute;
+    background: url('./Mountain.jpg') no-repeat  center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 75%;
+    top: 0px;
+    padding-bottom: 0px;
+}
+
+/* Utility Classes */
+#Home h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 3.5rem;
+    text-shadow: 2px 5px 8px #000000;
+
+}
+
+.intro-para p {
+    opacity: 100%;
+    margin: 0;
+    font-size: 1.2rem;
+    color: #004aad;
+    text-align: center;
+}
+
+.h-primary {
+    font-size: 2.8rem;
+    padding: 12px;
+    color: #004aad;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: -101px;
+    margin-top: 30px;
+
+}
+
+.btn {
+    padding: 15px 25px;
+    border: 0px;
+    background-color: #253e6e;
+    color: white;
+    margin: 0 17px;
+    font-size: 1.15rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.4s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #013880;
+
+}
+
+/* About Us */
+.about-us {
+    background-color: #253e6e;
+    margin-top: 97px;
+    position: absolute;
+    height: 375px;
+    width: 100%;
+
+    
+}
+.about-us h1{
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    height: 70px;
+
+
+}
+.about-us p{
+    height: 100%;
+    padding: 0px 250px 15px 250px;
+    text-align: justify;
+    font-size: 1.4rem;
+    color: white;
+}
+.button-container2{
+    padding: 10px 0px 40px 0px;
+    display: flex;
+    justify-content: center;
+
+}
+.btn2 {
+    padding: 10px 25px;
+    border: 0px;
+    background-color: white;
+    color: #253e6e;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+}
+
+.btn2:hover {
+    transform: scale(1.009);
+}
+
+/* Contact SECTION  */
+#contact {
+    top: 0px;
+    position: relative;
+    margin-top: 475px;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    /* background: url('bg88.jpg') no-repeat center center/cover; */
+    background-color: #253e6e;
+    border-top: 10px #253e6e;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: .7rem;
+    border-radius: 10px;
+    border: 2px #253e6e;
+    font-size: 1.1rem;
+    margin: 5px 3px;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 35px;
+
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
+footer {
+    background: #253e6e;
+    color: white;
+    text-align: center;
+}
